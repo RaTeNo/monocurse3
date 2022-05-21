@@ -1,0 +1,655 @@
+@media print, (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 16px;
+        --font_size_title: 33px;
+    }
+
+
+    .swiper-container-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        right: 118px;
+        bottom: 29px;
+
+        width: 132px;
+    }
+
+
+    .swiper-button-prev,
+    .swiper-button-next
+    {
+        color: #3e57df;
+
+        top: 184px;
+        bottom: auto;
+
+        width: 25px;
+        height: 26px;
+
+        background: rgb(255, 255, 255, .89);
+        box-shadow: 0 0 6.72px .28px rgba(111, 126, 221, .23);
+    }
+
+    .swiper-button-prev
+    {
+        right: 320px;
+        left: auto;
+    }
+
+    .swiper-button-next
+    {
+        right: -4px;
+    }
+
+    .swiper-button-next .icon,
+    .swiper-button-prev .icon
+    {
+        width: 13px;
+        height: 8px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 20px 72px 20px 24px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 21px;
+    }
+
+
+    .accordion_item .head .icon
+    {
+        right: 20px;
+
+        width: 18px;
+        height: 18px;
+    }
+
+    .accordion_item .head .icon:before
+    {
+        height: 2px;
+    }
+
+    .accordion_item .head .icon:after
+    {
+        width: 2px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 24px 0;
+    }
+
+
+
+    /*---------------
+        Ad banner
+    ---------------*/
+    .ad_banner
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+
+        width: 310px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #fff;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .mob_scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        overscroll-behavior-y: contain;
+    }
+
+    header .mob_scroll > *
+    {
+        width: 100%;
+    }
+
+
+    header .info
+    {
+        padding: 0;
+    }
+
+
+    header .logo
+    {
+        display: none;
+    }
+
+
+    header .links
+    {
+        display: block;
+
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    header .links > * + *
+    {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+    header .menu
+    {
+        display: block;
+
+        width: 100%;
+        padding: 20px;
+
+        border-top: 1px solid #ddd;
+    }
+
+    header .menu > * + *
+    {
+        margin-top: 2px;
+        margin-left: 0;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+    .page_content{
+       
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title
+    {
+        line-height: 100%;
+
+        padding-bottom: 16px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*-----------------
+        Course info
+    -----------------*/
+    .course_info .data
+    {
+        position: relative;
+        z-index: 9;
+
+        width: 100%;
+        padding: 0 0 32px;
+
+        border: none;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+
+    .course_info .data .title
+    {
+        font-size: 36px;
+        line-height: 42px;
+
+        padding-bottom: 12px;
+    }
+
+
+    .course_info .data .desc
+    {
+        line-height: 24px;
+
+        margin-top: 20px;
+    }
+
+
+    .course_info .price
+    {
+        display: flex;
+
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+        padding: 0;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .course_info .price > *
+    {
+        width: auto;
+        padding-left: 32px;
+    }
+
+    .course_info .price > * + *
+    {
+        margin-top: 0;
+        margin-left: 32px;
+    }
+
+
+    .course_info .price .bg
+    {
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: auto;
+
+        width: 244px;
+        height: 244px;
+        padding: 0;
+    }
+
+
+
+    /*-----------
+        Order
+    -----------*/
+    .order .title
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .order .title br
+    {
+        display: none;
+    }
+
+
+    .order .form
+    {
+        width: 100%;
+        padding: 0;
+
+        border: none;
+    }
+
+
+
+    /*--------------------
+        Course program
+    --------------------*/
+    .course_program .block_title
+    {
+        font-size: 32px;
+        line-height: calc(100% + 8px);
+
+        margin-bottom: 20px;
+    }
+
+
+    .course_program .info
+    {
+        line-height: 22px;
+
+        padding: 0 24px 15px;
+    }
+
+
+    .course_program .location
+    {
+        margin-left: 52px;
+    }
+
+
+    .course_program .items
+    {
+        padding: 20px 24px 0;
+    }
+
+
+
+    /*------------------
+        Course order
+    -------------------*/
+    .course_order .block_title
+    {
+        font-size: 30px;
+
+        width: 100%;
+        margin-bottom: 32px;
+        padding-bottom: 23px;
+
+        border-bottom: 1px solid #5164ca;
+    }
+
+    .course_order .block_title br
+    {
+        display: none;
+    }
+
+    .course_order .block_title .icon
+    {
+        right: 0;
+        bottom: 11px;
+    }
+
+
+    .course_order .form
+    {
+        width: 100%;
+        padding: 0;
+
+        border: none;
+    }
+
+    .course_order .form .submit
+    {
+        width: 236px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .image
+    {
+        width: 340px;
+        padding: 12px;
+    }
+
+    .advantages .image img.bg
+    {
+        top: -23px;
+        left: -25px;
+
+        width: 369px;
+        height: 409px;
+    }
+
+
+    .advantages .data
+    {
+        width: calc(100% - 392px);
+    }
+
+
+    .advantages .items
+    {
+        line-height: 22px;
+    }
+
+
+
+    /*--------------
+        Teachers
+    --------------*/
+    .teachers .block_head
+    {
+        margin-bottom: -36px;
+    }
+
+
+    .teachers .teacher .info
+    {
+        width: 356px;
+        padding-top: 60px;
+    }
+
+
+    .teachers .teacher .name
+    {
+        font-size: 24px;
+    }
+
+    .teachers .teacher .post
+    {
+        font-size: 17px;
+    }
+
+
+    .teachers .teacher .image
+    {
+        width: 340px;
+        padding: 12px;
+    }
+
+    .teachers .teacher .image img.bg
+    {
+        top: -22px;
+        left: -25px;
+
+        width: 375px;
+        height: 398px;
+    }
+
+
+    .teachers .thumbs
+    {
+        display: none;
+    }
+
+
+    .teachers .count
+    {
+        font-size: 12px;
+
+        right: 32px;
+
+        width: 56px;
+    }
+
+    .teachers .count .current
+    {
+        font-size: 18px;
+    }
+
+
+    .teachers .arrows
+    {
+        position: static;
+        right: 0;
+        bottom: 0;
+
+        width: 0;
+        height: 0;
+        padding: 0;
+
+        outline: none;
+        background: none;
+    }
+
+
+
+    /*------------------
+        Course order
+    -------------------*/
+    .course_order .block_title
+    {
+        font-size: 28px;
+    }
+
+
+    .course_order .form .title
+    {
+        font-size: 16px;
+
+        margin-bottom: 16px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        width: 272px;
+    }
+
+
+    .contacts_info .data .logo
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .contacts_info .data .item
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .contacts_info .data .item + .item
+    {
+        margin-top: 28px;
+    }
+
+
+
+    .contacts_info .feedback
+    {
+        width: 400px;
+    }
+
+
+    .contacts_info .feedback .title
+    {
+        font-size: 24px;
+
+        padding: 20px 32px;
+    }
+
+
+    .contacts_info .feedback .form
+    {
+        padding: 20px 32px 32px;
+    }
+
+
+    .contacts_info .feedback .form .desc
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 20px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .links > * + *
+    {
+        margin-left: 24px;
+    }
+
+
+    footer .links a
+    {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+
+    footer .text
+    {
+        width: calc(100% - 296px);
+    }
+
+    .tab_filter{
+        display: none;
+    }
+}

@@ -1,0 +1,454 @@
+@media print, (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 30px;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 50px;
+    }
+
+
+
+    .swiper-container-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        display: none;
+    }
+
+
+    .swiper-button-prev,
+    .swiper-button-next
+    {
+        top: auto;
+        bottom: 176px;
+    }
+
+    .swiper-button-prev
+    {
+        left: 50%;
+
+        margin-left: -170px;
+    }
+
+    .swiper-button-next
+    {
+        right: 50%;
+
+        margin-right: -170px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 20px 64px 20px 20px;
+    }
+
+    .accordion_item .head .title
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .breadcrumbs
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+
+    .breadcrumbs .sep
+    {
+        margin: 0 6px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .line
+    {
+        margin-bottom: 12px;
+    }
+
+
+    .form .columns > *.width1of3,
+    .form .columns > *.width2of3
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .bottom .agree
+    {
+        width: 100%;
+        padding-top: 8px;
+    }
+
+    .form .bottom .submit
+    {
+        width: 100%;
+        padding-top: 16px;
+    }
+
+
+    .form input[type=checkbox] + label br
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*-----------------
+        Course info
+    -----------------*/
+    .course_info .data .title
+    {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+
+    .course_info .data .desc
+    {
+        line-height: 21px;
+    }
+
+
+    .course_info .price > * + *
+    {
+        margin-left: 20px;
+    }
+
+    .course_info .price .sticker
+    {
+        bottom: 6px;
+    }
+
+    .course_info .price .name
+    {
+        line-height: 24px;
+    }
+
+    .course_info .price .val
+    {
+        font-size: 26px;
+    }
+
+    .course_info .price .old
+    {
+        margin-left: 4px;
+    }
+
+
+    .course_info .price .bg
+    {
+        right: -100px;
+        bottom: 60px;
+
+        width: 200px;
+        height: 200px;
+    }
+
+
+
+    /*-----------
+        Order
+    -----------*/
+    .order .data
+    {
+        padding: 28px;
+    }
+
+
+    .order .title
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        margin-bottom: 20px;
+    }
+
+    .order .title:before
+    {
+        left: -30px;
+    }
+
+
+
+    /*--------------------
+        Course program
+    --------------------*/
+    .course_program .info
+    {
+        display: block;
+
+        padding: 0 0 15px;
+    }
+
+
+    .course_program .location
+    {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+    .course_program .items
+    {
+        padding: 20px 0 0;
+    }
+
+    .course_program .items > * + *
+    {
+        margin-top: 4px;
+    }
+
+
+
+    /*------------------
+        Course order
+    -------------------*/
+    .course_order .form .agree
+    {
+        margin-top: 8px;
+    }
+
+
+    .course_order .form .submit
+    {
+        width: 100%;
+        padding-top: 16px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .image
+    {
+        margin: 0 auto;
+    }
+
+
+    .advantages .data
+    {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+
+
+    /*--------------
+        Teachers
+    --------------*/
+    .teachers .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .teachers .teacher .info
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .teachers .teacher .image
+    {
+        margin: 40px auto 0;
+    }
+
+
+    .teachers .count
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data .logo
+    {
+        margin-bottom: 28px;
+    }
+
+    .contacts_info .data .logo img
+    {
+        height: 32px;
+    }
+
+
+    .contacts_info .data .item + .item
+    {
+        margin-top: 24px;
+    }
+
+
+
+    .contacts_info .feedback
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .contacts_info .feedback .title
+    {
+        font-size: 22px;
+
+        padding: 20px 28px;
+    }
+
+    .contacts_info .feedback .form
+    {
+        padding: 20px 28px 28px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo
+    {
+        width: 100%;
+    }
+
+    footer .logo img
+    {
+        height: 32px;
+    }
+
+
+
+    footer .links
+    {
+        display: block;
+
+        width: 100%;
+        margin-top: 24px;
+        padding-top: 24px;
+
+        border-top: 1px solid #5263be;
+    }
+
+    footer .links > * + *
+    {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+
+    footer .hr
+    {
+        margin: 24px 20px;
+        max-width: calc(100% - 40px);
+    }
+
+
+
+    footer .copyright
+    {
+        width: auto;
+
+        align-self: center;
+    }
+
+
+
+    footer .designer
+    {
+        width: auto;
+
+        align-self: center;
+    }
+
+    footer .designer a
+    {
+        display: flex;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer .designer img
+    {
+        margin-left: 12px;
+    }
+
+
+
+    footer .text
+    {
+        width: 100%;
+        margin-top: 20px;
+
+        text-align: left;
+
+        order: 3;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}
